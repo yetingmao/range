@@ -1,0 +1,131 @@
+.content_entity {
+  display: flex;
+
+  .entity_mark {
+    width: calc(100% - 350px);
+    height: 100%;
+    padding-right: 20px;
+
+    // border: 1px solid #ddd;
+    .ant-tabs {
+
+      .ant-tabs-bar {
+        border-bottom: none
+      }
+    }
+
+    .mark_body {
+      width: 100%;
+      height: calc(100% - 80px);
+      border: 1px solid rgb(235, 235, 235);
+      border-left: none;
+
+      .body_top {
+        padding-left: 20px;
+        width: 100%;
+        height: 60px;
+        background-color: rgb(245, 245, 245);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .body_bottom {
+        width: 100%;
+        height: calc(100% - 60px);
+        padding: 30px 20px;
+        font-size: 14px;
+        line-height: 30px;
+        position: relative;
+
+        .bottom_popover {
+          position: absolute;
+
+          // display: none;
+
+        }
+
+        .bottom_info {
+          user-select: none;
+
+          .info_text {
+            color: #1890ff;
+            font-weight: bold;
+          }
+
+          .info_lable {
+            color: #fff;
+            background: #108ee9;
+            padding: 0 8px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .entity_lable {
+    width: 350px;
+    height: 100%;
+    border-left: 2px solid rgb(235, 235, 235);
+
+    .lable_title {
+      height: 60px;
+      width: 100%;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      border-bottom: 1px solid rgb(235, 235, 235);
+      justify-content: space-between;
+    }
+
+    .lable_notice {
+      height: 40px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    .lable_list {
+      width: 100%;
+      height: calc(100% - 101px);
+      overflow: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}
+
+.ant-popover-content {
+  .ant-popover-inner-content {
+    padding: 0;
+
+    .popover_lable {
+      .lable_item {
+        height: 36px;
+        line-height: 36px;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        cursor: pointer;
+        user-select: none
+      }
+
+      .lable_item:hover {
+        background-color: rgb(245, 245, 245);
+      }
+
+      .lable_action {
+        display: flex;
+        justify-content: center;
+        padding: 5px 0;
+        border-top: 1px solid rgb(232, 232, 232);
+      }
+    }
+  }
+
+}

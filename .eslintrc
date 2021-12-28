@@ -1,0 +1,6 @@
+{
+  "extends": "eslint-config-umi",
+  "rules": {
+    "no-restricted-globals": "off"
+  }
+}

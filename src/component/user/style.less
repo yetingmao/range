@@ -1,0 +1,40 @@
+.component_user {
+    background: #2d8cf0;
+    color     : #fff;
+    padding   : 0;
+
+    .user_trigger {
+        font-size  : 18px;
+        line-height: 64px;
+        padding    : 0 24px;
+        cursor     : pointer;
+        transition : color 0.3s;
+    }
+
+    .user_trigger:hover {
+        color: #1890ff;
+    }
+
+    .user_ul {
+        display          : -ms-flexbox;
+        display          : flex;
+        // width         : 300px;
+        width            : 70px;
+
+        li {
+            -ms-flex-positive: 1;
+            flex-grow        : 1;
+            text-align       : center;
+
+            .user_info {
+                margin-right: 15px;
+                color       : #e6f7ff;
+            }
+        }
+    }
+
+    .menu_group li {
+        padding    : 0 24px;
+        line-height: 2em;
+    }
+}
